@@ -21,10 +21,9 @@ module FinalHotReads
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
-    # whitelist = ENV['RAILS_ENV'] === 'production' ? 'https://jesse-urlockbox.herokuapp.com/' : 'http://localhost:3000'
-    # config.action_dispatch.default_headers = {
-    #   'Access-Control-Allow-Origin' => whitelist,
-    #   'Access-Control-Request-Method' => %w{GET POST}.join(",")
-    # }
+    config.action_dispatch.default_headers = {
+      'Access-Control-Allow-Origin' => "https://jesse-urlockbox.herokuapp.com/",
+      'Access-Control-Request-Method' => %w{GET POST}.join(",")
+    }
   end
 end
