@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Welcome to Hot Reads</h1>
+  <iframe src="//giphy.com/embed/QqostCXAat440?html5=true" width="480" height="201" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="http://giphy.com/gifs/jk-simmons-QqostCXAat440"></a></p>
+  <table class="table">
+    <thead>
+      <th>Url</th>
+      <th>Reads in past 24 hours</th>
+    </thead>
+    <% @reads.each do |read| %>
+      <tr>
+        <td><%= link_to read[0], read[0] %></td>
+        <td><%= read[1] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
