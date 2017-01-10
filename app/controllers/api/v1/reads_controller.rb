@@ -1,6 +1,5 @@
 class Api::V1::ReadsController < ApplicationController
   def create
-    binding.pry
     Read.create(read_params)
     head :created, content_type: "text/html"
   end
